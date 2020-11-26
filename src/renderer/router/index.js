@@ -37,7 +37,7 @@ export const constantRouterMap = [
     }]
   },
 
-  {
+  /* {
     path: '/example',
     component: Layout,
     redirect: '/example/table',
@@ -57,7 +57,7 @@ export const constantRouterMap = [
         meta: { title: 'Tree', icon: 'tree' }
       }
     ]
-  },
+  },*/
 
   {
     path: '/form',
