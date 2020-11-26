@@ -11,16 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30c29629-d9eb-4aba-a0a7-8f30779edcd0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/eventListener/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/utils/ipcUtil.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/api/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/views/dashboard/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/views/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/views/layout/components/Navbar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,6 +108,14 @@
       <workItem from="1606373396613" duration="929000" />
       <workItem from="1606376331178" duration="286000" />
     </task>
+    <task id="LOCAL-00001" summary="[+]添加逻辑处理">
+      <created>1606394488252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606394488252</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,31 +132,39 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[+]添加逻辑处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+]添加逻辑处理" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1900" height="282" key="GridCell.Tab.0.bottom" timestamp="1606376427208">
+    <state x="556" y="104" key="CommitChangelistDialog2" timestamp="1606394487451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1900" height="282" key="GridCell.Tab.0.bottom/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606376427208" />
-    <state width="1900" height="282" key="GridCell.Tab.0.center" timestamp="1606376427208">
+    <state x="556" y="104" key="CommitChangelistDialog2/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606394487451" />
+    <state width="1900" height="382" key="GridCell.Tab.0.bottom" timestamp="1606395211160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1900" height="282" key="GridCell.Tab.0.center/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606376427208" />
-    <state width="1900" height="282" key="GridCell.Tab.0.left" timestamp="1606376427208">
+    <state width="1900" height="382" key="GridCell.Tab.0.bottom/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606395211160" />
+    <state width="1900" height="382" key="GridCell.Tab.0.center" timestamp="1606395211160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1900" height="282" key="GridCell.Tab.0.left/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606376427208" />
-    <state width="1900" height="282" key="GridCell.Tab.0.right" timestamp="1606376427208">
+    <state width="1900" height="382" key="GridCell.Tab.0.center/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606395211160" />
+    <state width="1900" height="382" key="GridCell.Tab.0.left" timestamp="1606395211160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1900" height="282" key="GridCell.Tab.0.right/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606376427208" />
+    <state width="1900" height="382" key="GridCell.Tab.0.left/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606395211160" />
+    <state width="1900" height="382" key="GridCell.Tab.0.right" timestamp="1606395211160">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1900" height="382" key="GridCell.Tab.0.right/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606395211160" />
     <state x="705" y="221" key="RollbackChangesDialog" timestamp="1606394214984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="221" key="RollbackChangesDialog/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606394214984" />
-    <state x="660" y="251" width="598" height="536" key="find.popup" timestamp="1606394329322">
+    <state x="660" y="251" width="598" height="536" key="find.popup" timestamp="1606395286569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="251" width="598" height="536" key="find.popup/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606394329322" />
+    <state x="660" y="251" width="598" height="536" key="find.popup/-3840.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606395286569" />
     <state x="624" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606394398657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
