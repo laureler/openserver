@@ -1,4 +1,5 @@
 const { ipcRenderer } = require('electron')
+const {clipboard} = require('electron')
 /**
  * 同步发送消息
  */
@@ -12,7 +13,12 @@ export function readFile(path){
   return str
 }
 
-export function extraExcel(path){
-  const str = ipcRenderer.sendSync('extra-excel', path)
-  return str
+export function extraExcel(path,type){
+  const array = ipcRenderer.sendSync('extra-excel', {
+    path,type
+  })
+  return array
+}
+export function copyText(text){
+  clipboard.writeText(text);
 }

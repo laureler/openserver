@@ -13,7 +13,9 @@ ipcMain.on('read-file', (event, path) => {
   })
   event.returnValue = buffer
 })
-ipcMain.on('extra-excel', (event, path) => {
-  var excelToJson = extraExcelToJson(path)
+ipcMain.on('extra-excel', (event, obj) => {
+  let path = obj.path;
+  let type = obj.type;
+  var excelToJson = extraExcelToJson(path,type)
   event.returnValue = excelToJson;
 })
