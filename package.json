@@ -1,7 +1,7 @@
 {
-  "name": "electron-vue-admin",
+  "name": "openServer",
   "version": "3.0.0",
-  "author": "Pan <panfree23@gmail.com>",
+  "author": "yunlong",
   "description": "An electron-vue project",
   "license": "MIT",
   "main": "./dist/electron/main.js",
@@ -19,7 +19,7 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "electron-vue-admin",
+    "productName": "open-server",
     "appId": "org.simulatedgreg.electron-vue",
     "directories": {
       "output": "build"
