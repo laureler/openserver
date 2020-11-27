@@ -23,6 +23,10 @@ function createWindow() {
     width: 1000
   })
 
+  //安装vue-devtools
+  if (process.env.NODE_ENV !== 'production') {
+    require('vue-devtools').install()
+  }
   mainWindow.loadURL(winURL)
 
   mainWindow.on('closed', () => {

@@ -10,5 +10,7 @@ export default {
 }
 </script>
 <style lang="scss">
+	#app {
+	}
   @import './styles/index.scss'; // 全局自定义的css样式
 </style>
