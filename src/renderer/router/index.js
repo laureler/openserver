@@ -44,7 +44,7 @@ export const constantRouterMap = [
         path: 'index',
         name: 'Form',
         component: () => import('@/views/form/index'),
-        meta: { title: 'Form', icon: 'form' }
+        meta: { title: 'Form', icon: 'el-icon-more' }
       }
     ]
   },
@@ -56,7 +56,7 @@ export const constantRouterMap = [
         path: 'index',
         name: 'fixForm',
         component: () => import('@/views/fixForm/index'),
-        meta: { title: '修复表单id', icon: 'form' }
+        meta: { title: '修复表单id', icon: 'el-icon-connection' }
       }
     ]
   },
