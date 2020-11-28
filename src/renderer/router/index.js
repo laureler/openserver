@@ -29,7 +29,7 @@ export const constantRouterMap = [
     path: '/',
     component: Layout,
     redirect: '/dashboard',
-    name: 'Dashboard',
+    name: '首页',
     hidden: true,
     children: [{
       path: 'dashboard',
@@ -57,6 +57,18 @@ export const constantRouterMap = [
         name: 'fixForm',
         component: () => import('@/views/fixForm/index'),
         meta: { title: '修复表单id', icon: 'el-icon-connection' }
+      }
+    ]
+  },
+  {
+    path: '/createWeekResult',
+    component: Layout,
+    children: [
+      {
+        path: 'createWeekResult',
+        name: 'createWeekResult',
+        component: () => import('@/views/week/index'),
+        meta: { title: '生成周报字符串', icon: 'el-icon-connection' }
       }
     ]
   },
